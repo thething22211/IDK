@@ -219,7 +219,7 @@ for index, vehicle_data in next, dependencies.modules.vehicle_data do
     end;
 
     if vehicle_data.Type ~= "Chassis" and vehicle_data.Type ~= "Motorcycle" and vehicle_data.Type ~= "Heli" and vehicle_data.Type ~= "DuneBuggy" and vehicle_data.Make ~= "Volt" then -- weird vehicles that are not supported
-        dependencies.unsupported_vehicles[vehicle_data.Make] = true;
+        dependencies.unsupported_vehicles[vehicle_data.Make] = false;
     end;
     
     if not vehicle_data.Price then -- free vehicles
